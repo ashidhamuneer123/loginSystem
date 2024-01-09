@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.navbar-brand{
+    color: darkorchid;
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('assets/bckfl.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.center-div{
+    padding-top: 10%;
+}
+
+form{
+    padding: 0 3em;
+}
+span{
+    font-size: .8em;
+}
+.contain{
+    float: left;
+    height: 60vw;
+}
+.contain button{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color:darkorchid;
+}
+.card{
+    background-color: transparent;
+}
+.card-title{
+    color: darkorchid;
+    font-weight: bold;
+}
+
+.additem{
+    text-align: center;
+
+}
+.additem button{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color:darkorchid;
+}
+.additem input{
+    border-radius: 4px;
+}
+
+
+footer{
+    padding: 50px 0;
+    background-color: transparent;
+    clear: both;
+    display: block;
+    line-height: 20px;
+}
+
+
+footer .copyright{
+    text-align: center;
+}
+
+.policy{
+    background-color:darkorchid;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 20px;
+    color: #fefefe;
+}
+.policy a{
+    color: #fefefe;
+}
+.policy a:hover
+{
+    color: red;
+}
+button:hover
+{
+    background: green;
+}

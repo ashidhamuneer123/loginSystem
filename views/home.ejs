@@ -1,0 +1,70 @@
+<%-include('header')-%>
+
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Pinch Of Yum !!!!SIMPLE RECIPES MADE FOR
+        real, actual, everyday life.</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="text-center"  id="login">
+    <div class="contain container w-25 border">
+        <img src="/assets/logonw.png" alt="img">
+       <h3> <%=locals.user?user:"user"%></h3>
+        <h6>Last visited:<%=currenttime%></h6>
+        <form action="/route/logout">
+           <button>Logout</button>
+        </form>       
+    </div>
+  </div>
+  <!--looping card-->
+   <div class="container">
+    <% for(var i=0;i<data.length;i++){%>
+    <div class="card">
+       <div class="card-body">
+         <h3 class="card-title"><%=data[i].item%></h3>
+         <p class="card-text"><%=data[i].description%></p>
+         <a href="#" class="btn btn-primary"><%=data[i].button%></a>
+       </div>
+       
+     </div>
+     <%}%>
+   </div><br><br>
+
+     
+   <div class="additem">
+    <form action="#">
+      <label for="item"><h3>Add New Recipe!!</h3></label><br><br>
+      <input type="text" placeholder="Write Recipe Title"><br><br>
+      <button>Add Recipe</button><br>
+    </form>
+   </div>
+
+<!--footer-->
+
+<footer id="footer">
+    
+    <div class="copyright">
+       © 2023 Ash Tech. Pvt. Ltd.
+   </div>
+</footer>
+<div class="policy">
+<p>
+© 2023 Ash Tech. Pvt.
+Ltd. |
+<a href="#">About Us |</a>
+<a href="#">Work with us |</a>
+<a href="#">Privacy Policy |</a>
+<a href="#">Terms |</a>
+<a href="#">Vulnerability Disclosure Policy |</a>
+<a href="#">Hall of Fame |</a>
+<a href="#">Annual Reports</a>
+</p>
+</div>
+
+<%-include('footer')-%>
+
